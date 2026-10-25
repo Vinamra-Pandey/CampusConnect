@@ -28,7 +28,7 @@ function AdminInternships({ onStatsChange }) {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/internships"
+        "https://campusconnect-api-cyc3.onrender.com/api/internships"
       );
 
       const data = await response.json();
@@ -104,7 +104,7 @@ function AdminInternships({ onStatsChange }) {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/internships/${editingInternship._id}`,
+        `https://campusconnect-api-cyc3.onrender.com/api/internships/${editingInternship._id}`,
         {
           method: "PUT",
 
@@ -189,7 +189,7 @@ function AdminInternships({ onStatsChange }) {
 
       const response =
         await fetch(
-          `http://localhost:5000/api/internships/${id}`,
+          `https://campusconnect-api-cyc3.onrender.com/api/internships/${id}`,
           {
             method: "DELETE",
 

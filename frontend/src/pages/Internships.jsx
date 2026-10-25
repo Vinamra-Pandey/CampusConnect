@@ -10,7 +10,7 @@ function Internships() {
   useEffect(() => {
     async function getInternships() {
       try {
-        const response = await fetch("http://localhost:5000/api/internships");
+        const response = await fetch("https://campusconnect-api-cyc3.onrender.com/api/internships");
 
         const data = await response.json();
 

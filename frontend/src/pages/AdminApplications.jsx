@@ -74,7 +74,7 @@ function AdminApplications({ onStatsChange }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/applications/${id}`,
+        `https://campusconnect-api-cyc3.onrender.com/api/admin/applications/${id}`,
         {
           method: "PATCH",
 
@@ -122,7 +122,7 @@ function AdminApplications({ onStatsChange }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/applications",
+        "https://campusconnect-api-cyc3.onrender.com/api/admin/applications",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -486,7 +486,7 @@ function AdminApplications({ onStatsChange }) {
               {selectedStudent.resume && (
                 <a
                   className="admin-profile-resume"
-                  href={`http://localhost:5000${selectedStudent.resume}`}
+                  href={`https://campusconnect-api-cyc3.onrender.com${selectedStudent.resume}`}
                   target="_blank"
                   rel="noreferrer"
                 >

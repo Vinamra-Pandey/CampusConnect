@@ -31,7 +31,7 @@ function MyApplications() {
       try {
 
         const response = await fetch(
-          'http://localhost:5000/api/applications',
+          'https://campusconnect-api-cyc3.onrender.com/api/applications',
           {
             headers: {
               Authorization: `Bearer ${token}`

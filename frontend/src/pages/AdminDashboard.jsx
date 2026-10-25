@@ -30,7 +30,7 @@ function AdminDashboard() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/stats",
+        "https://campusconnect-api-cyc3.onrender.com/api/admin/stats",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -91,7 +91,7 @@ function AdminDashboard() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/internships",
+        "https://campusconnect-api-cyc3.onrender.com/api/internships",
         {
           method: "POST",
 

@@ -26,7 +26,7 @@ function InternshipDetails() {
       try {
 
         const response = await fetch(
-          `http://localhost:5000/api/internships/${id}`
+          `https://campusconnect-api-cyc3.onrender.com/api/internships/${id}`
         )
 
         const data = await response.json()
@@ -85,7 +85,7 @@ function InternshipDetails() {
     try {
 
       const response = await fetch(
-        'http://localhost:5000/api/applications',
+        'https://campusconnect-api-cyc3.onrender.com/api/applications',
         {
           method: 'POST',
 

@@ -34,7 +34,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/profile",
+        "https://campusconnect-api-cyc3.onrender.com/api/profile",
         {
           method: "GET",
           headers: {
@@ -88,7 +88,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/profile",
+        "https://campusconnect-api-cyc3.onrender.com/api/profile",
         {
           method: "PUT",
 
@@ -163,7 +163,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/profile/resume",
+        "https://campusconnect-api-cyc3.onrender.com/api/profile/resume",
         {
           method: "POST",
 
@@ -721,7 +721,7 @@ function Profile() {
                 </p>
 
                 <a
-                  href={`http://localhost:5000${user.resume}`}
+                  href={`https://campusconnect-api-cyc3.onrender.com${user.resume}`}
                   target="_blank"
                   rel="noreferrer"
                 >
